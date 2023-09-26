@@ -1,13 +1,18 @@
 ---
-import { Container } from '@littlesticks/odyssey-theme-components';
+import { Container, TextSection } from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 
+const seo = {
+  title: `À propos | Compagnie Animale`,
+  description: `Présentation de Compagnie Animale. Qui suis-je, qu'est ce qu'un comportementaliste canin et félin, quelles sont mes formations?`,
+};
+
 ---
 
-<Layout>
+<Layout seo={seo}>
 	<Container>
-		<section>
+		<TextSection  narrow>
 			<h2>Margaux Astruc</h2>
 			<p>
 				Educatrice comportementaliste canin et félin, je vous accompagne dans
@@ -40,8 +45,8 @@ import Layout from '../layouts/Page.astro';
 				je vous invite à me contacter, c’est avec plaisir que je vous
 				répondrai !
 			</p>
-		</section>
-		<section>
+		</TextSection>
+		<TextSection narrow>
 			<h3>Qu'est-ce qu'un comportementaliste ?</h3>
 			<p>
 				Le comportementaliste est un professionnel s'appuyant sur ses
@@ -50,8 +55,8 @@ import Layout from '../layouts/Page.astro';
 				de la manière dont il interagit avec ce dernier pour comprendre une
 				problématique et proposer des solutions pour y remédier.
 			</p>
-		</section>
-		<section>
+		</TextSection>
+		<TextSection narrow>
 			<h2>Mon parcours</h2>
 			<p>
 				Animée par l'envie d'aider les animaux et leurs gardiens, j’ai décidé de
@@ -65,19 +70,20 @@ import Layout from '../layouts/Page.astro';
 				ministère de l’Agriculture obligatoire pour exercer un métier en lien
 				avec les animaux domestiques.
 			</p>
-		</section>
+		</TextSection>
 	</Container>
 	<Container>
-		<h2>Formations</h2>
-		<ul class="education__list">
-			<li><strong>Congrès international Pet Revolution (2022)</strong>  - organisé par l'organisme de formation Animal University (Thierry Bedossa, Eléonore Buffet et Sarah Jeannin).</li>
-			<li><strong>Colloque annuel CATUS (2021)</strong> - organisé par CATUS, collectif de consultants de la relation Chat-Humain.</li>
-			<li><strong>ACACED (2021)</strong> - Vox Animae, avec Romuald Deschodt, éducateur comportementaliste canin.</li>
-			<li><strong>Comportementaliste félin (2021)</strong> - Vox Animae, avec Brunilde Ract-Madoux, éthologue spécialisée dans l’étude des comportements félins ; Sandie Decortiat et Sophie Legrand, intervenantes en comportement félin, directrice et directrice adjointe du réseau Educhateur France.</li>
-			<li><strong>Comportementaliste canin (2021)</strong> – Vox Animae, avec Marie Legain, éthologue spécialisée dans l’étude des comportements canins ; Dr Hélène Saint-Dizier docteure et consultante en éthologie ; Amandine Rolet, éducatrice comportementaliste canin et félin et Dr Pauline Salvin, docteure en éthologie et éducatrice comportementaliste canin et félin.</li>
-			<li><strong>Éducatrice canin (2021)</strong> - Vox Animae, avec Béatrice Meissner, éducatrice comportementaliste canin.</li>			
-		</ul>
-
+		<TextSection narrow>
+			<h2>Formations</h2>
+			<ul class="education__list">
+				<li><strong>Congrès international Pet Revolution (2022)</strong>  - organisé par l'organisme de formation Animal University (Thierry Bedossa, Eléonore Buffet et Sarah Jeannin).</li>
+				<li><strong>Colloque annuel CATUS (2021)</strong> - organisé par CATUS, collectif de consultants de la relation Chat-Humain.</li>
+				<li><strong>ACACED (2021)</strong> - Vox Animae, avec Romuald Deschodt, éducateur comportementaliste canin.</li>
+				<li><strong>Comportementaliste félin (2021)</strong> - Vox Animae, avec Brunilde Ract-Madoux, éthologue spécialisée dans l’étude des comportements félins ; Sandie Decortiat et Sophie Legrand, intervenantes en comportement félin, directrice et directrice adjointe du réseau Educhateur France.</li>
+				<li><strong>Comportementaliste canin (2021)</strong> – Vox Animae, avec Marie Legain, éthologue spécialisée dans l’étude des comportements canins ; Dr Hélène Saint-Dizier docteure et consultante en éthologie ; Amandine Rolet, éducatrice comportementaliste canin et félin et Dr Pauline Salvin, docteure en éthologie et éducatrice comportementaliste canin et félin.</li>
+				<li><strong>Éducatrice canin (2021)</strong> - Vox Animae, avec Béatrice Meissner, éducatrice comportementaliste canin.</li>			
+			</ul>
+		</TextSection>
 	</Container>
 </Layout>
 

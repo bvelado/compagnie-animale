@@ -1,80 +1,78 @@
 export const footerSocials = [
-//   {
-//     name: 'Twitter',
-//     url: 'https://twitter.com/littlesticksdev',
-//     icon: "mdi:twitter",
-//   },
-//   {
-//     name: 'Youtube',
-//     url: 'https://youtube.com/c/LittleSticks',
-//     icon: "mdi:youtube",
-//   },
-//   {
-//     name: 'Github',
-//     url: 'https://github.com/littlesticks',
-//     icon: "mdi:github",
-//   },
-//   {
-//     name: 'Discord',
-//     url: 'https://littlesticks.dev/discord',
-//     icon: "ic:baseline-discord",
-//   },
-]
+	{
+		name: 'Instagram',
+		icon: 'mdi:instagram',
+		url: 'https://www.instagram.com/compagnie.animale/',
+	},
+	{
+		name: 'Facebook',
+		icon: 'mdi:facebook',
+		url: 'https://www.facebook.com/compagnieanimale',
+	},
+];
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Services pour chien',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Bilan comportemental',
+				slug: '/services/chien/bilan-comportemental',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Éducation canine',
+				slug: '/services/chien/education-canine',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+			{
+				title: 'Promenade individuelle',
+				slug: '/services/chien/promenade-individuelle',
+			},
+			{
+				title: 'Accompagnement avant adoption',
+				slug: '/services/chien/accompagnement-avant-adoption',
+			},
+			{
+				title: 'Préparation aux changements de vie',
+				slug: '/services/chien/preparation-changement-de-vie',
+			},
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Services pour chat',
 		items: [
 			{
-				title: 'About',
-				slug: '/company/about',
+				title: 'Bilan comportemental',
+				slug: '/services/chat/bilan-comportemental',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'Accompagnement avant adoption',
+				slug: '/services/chat/accompagnement-avant-adoption',
+			},
+			{
+				title: 'Préparation aux changements de vie',
+				slug: '/services/chat/preparation-changement-de-vie',
+			},
+		],
+	},
+	{
+		title: 'Compagnie animale',
+		items: [
+			{
+				title: 'Accueil',
+				slug: '/',
+			},
+			{
+				title: 'Tarifs',
+				slug: '/tarifs',
+			},
+			{
+				title: 'À propos',
+				slug: '/a-propos',
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/contact',
 			},
-		],
-	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
 		],
 	},
 ];

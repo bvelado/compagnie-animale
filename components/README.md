@@ -2,7 +2,7 @@
 
 # Odyssey Theme Components
 
-## Install 
+## Install
 
 ```bash
 npm install --save-dev @littlesticks/odyssey-theme-components
@@ -10,7 +10,7 @@ npm install --save-dev @littlesticks/odyssey-theme-components
 
 ## Demo
 
-View a [Live Demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme to see these components in action. 
+View a [Live Demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme to see these components in action.
 
 Additionally, the source code for that demo is available [here](https://github.com/littlesticks/odyssey-theme).
 
@@ -18,8 +18,8 @@ Additionally, the source code for that demo is available [here](https://github.c
 
 All of the Astro components are available under a single package of `@littlesticks/odyssey-theme-components` for the sake of simplicity in maintenance and usage. However, you can view the source of each individual component with the links below.
 
-| Components                                                                          |
-| ------------------------------------------------------------------------------------|
+| Components                                                      |
+| --------------------------------------------------------------- |
 | [BlogPostPreview](blog/BlogPostPreview.astro)                   |
 | [BlogPostsList](blog/BlogPostsList.astro)                       |
 | [Button](buttons/Button.astro)                                  |

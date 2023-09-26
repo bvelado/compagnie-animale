@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components.svg)](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components)
-
 # Odyssey Theme Components
+
+[![npm version](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components.svg)](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components)
 
 ## Install
 

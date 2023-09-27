@@ -5,7 +5,7 @@ export const nav = [
 	},
 	{
 		title: 'Services',
-		slug: '/prestations',
+		slug: '/services',
 	},
 	{
 		title: 'Tarifs',

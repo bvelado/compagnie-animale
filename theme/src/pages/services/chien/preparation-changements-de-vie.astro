@@ -1,0 +1,45 @@
+---
+import { Container, TextSection } from '../../../../../components';
+
+import Layout from '../../../layouts/Page.astro';
+
+const seo = {
+	title: `Préparation aux changements de vie | Compagnie Animale`,
+	description: `Naissance d'un bébé, arrivée ou départ d'un membre du foyer,
+				déménagement, reprise ou changement de rythme de travail, ... sont
+				autant de bouleversements qui peuvent engendrer un stress et faire
+				apparaitre des comportements inhabituels (et parfois indésirables) chez
+				votre animal.`,
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<TextSection narrow>
+			<h2>Préparation aux changements de vie</h2>
+			<p>
+				Naissance d'un bébé, arrivée ou départ d'un membre du foyer,
+				déménagement, reprise ou changement de rythme de travail, ... sont
+				autant de bouleversements qui peuvent engendrer un stress et faire
+				apparaitre des comportements inhabituels (et parfois indésirables) chez
+				votre animal.
+			</p>
+			<p>
+				Durant un entretien d'environ 1h, je vous donne des conseils et astuces
+				pour aborder en douceur ces changements et éviter l'apparition de
+				comportements dérangeants.
+			</p>
+			<p>
+				Mictions hors du bac à litière, conduites agressives, aboiements,
+				destructions, ... Nos chats et chiens sont sensibles aux changements qui
+				viennent perturber leur routine et l'équilibre du foyer. Afin de limiter
+				leur perte de repères et d'éviter trop de stress, il convient
+				d'instaurer progressivement de nouvelles habitudes, pour les préparer à
+				leur nouvelle vie.
+			</p>
+		</TextSection>
+	</Container>
+</Layout>
+
+<style>
+</style>

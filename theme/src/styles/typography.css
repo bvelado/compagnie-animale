@@ -1,5 +1,5 @@
 /* Special thanks to this tool for local fonts CSS generation:
-  https://google-webfonts-helper.herokuapp.com/fonts/lato?subsets=latin
+  https://gwfh.mranftl.com/fonts
 */
 
 /* logo : Lilita One */
@@ -8,78 +8,98 @@
 
 /* lilita-one-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lilita One';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/lilita-one-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/lilita-one-v15-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lilita One';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/lilita-one-v15-latin-regular.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/lilita-one-v15-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 
 /* nunito-sans-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/assets/fonts/nunito-sans-v15-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/nunito-sans-v15-latin-300.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/assets/fonts/nunito-sans-v15-latin-300.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/nunito-sans-v15-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 /* nunito-sans-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/nunito-sans-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/nunito-sans-v15-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/nunito-sans-v15-latin-regular.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/nunito-sans-v15-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 /* nunito-sans-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/nunito-sans-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/nunito-sans-v15-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/nunito-sans-v15-latin-700.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/nunito-sans-v15-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 /* nunito-sans-700italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Nunito Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url('/assets/fonts/nunito-sans-v15-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/nunito-sans-v15-latin-700italic.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url('/assets/fonts/nunito-sans-v15-latin-700italic.woff2')
+			format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/nunito-sans-v15-latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+}
+
+/* playfair-display-italic - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Playfair Display';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/assets/fontsplayfair-display-v36-latin-italic.woff2')
+			format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fontsplayfair-display-v36-latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 
 /* playfair-display-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/assets/fonts/playfair-display-v36-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/playfair-display-v36-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/assets/fonts/playfair-display-v36-latin-600.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/playfair-display-v36-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 /* playfair-display-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/playfair-display-v36-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('/assets/fonts/playfair-display-v36-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/playfair-display-v36-latin-700.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+			url('/assets/fonts/playfair-display-v36-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 
 :root {
-  --font-size-sm: clamp(14.4px, 0.07vw + 14.13px, 15px);
-  --font-size-base: clamp(18px, 0.23vw + 17.09px, 20px);
-  --font-size-md: clamp(22.5px, 0.47vw + 20.61px, 26.66px);
-  --font-size-lg: clamp(28.13px, 0.84vw + 24.76px, 35.54px);
-  --font-size-xl: clamp(35.16px, 1.39vw + 29.6px, 47.37px);
-  --font-size-xxl: clamp(43.95px, 2.18vw + 35.22px, 63.15px);
-  --font-size-xxxl: clamp(54.93px, 3.32vw + 41.64px, 84.17px);
+	--font-size-sm: clamp(14.4px, 0.07vw + 14.13px, 15px);
+	--font-size-base: clamp(18px, 0.23vw + 17.09px, 20px);
+	--font-size-md: clamp(22.5px, 0.47vw + 20.61px, 26.66px);
+	--font-size-lg: clamp(28.13px, 0.84vw + 24.76px, 35.54px);
+	--font-size-xl: clamp(35.16px, 1.39vw + 29.6px, 47.37px);
+	--font-size-xxl: clamp(43.95px, 2.18vw + 35.22px, 63.15px);
+	--font-size-xxxl: clamp(54.93px, 3.32vw + 41.64px, 84.17px);
 }
 
 html,
@@ -88,7 +108,7 @@ body {
 	font-family: var(--theme-font-family-sans);
 	font-size: var(--font-size-base);
 	color: var(--theme-on-bg);
-} 
+}
 
 h1,
 h2,

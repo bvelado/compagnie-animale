@@ -1,0 +1,61 @@
+---
+import { Container, TextSection } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Page.astro';
+import PricingCard from '../../../components/cards/PricingCard.astro';
+
+import { slugs } from '../utils/consts';
+
+const seo = {
+  title: `Tarifs | Compagnie Animale`,
+  description: `Tarifs des différents services proposés par Compagnie Animale.`,
+};
+
+---
+
+<Layout seo={seo}>
+	<Container>
+		<TextSection  narrow>
+			<h2>Tarifs</h2>
+			<p>
+				Pour découvrir les prestations en détails, rendez-vous ici ou contactez-moi directement.
+                Moyens de paiement acceptés : Carte bancaire, chèques, espèces. 
+                0,50€/km à partir de 20km. 
+                Une facture vous sera remise lors de votre règlement. 
+                AJOUTER CARTE MAPS RAYON D'INTERVENTION 
+			</p>
+		</TextSection>
+        <section class="feature-card__section">
+			<h2>Chien</h2>
+			<p>
+				Prestations proposées pour les chiens.
+			</p>
+			<div class="feature-card__grid">
+				<PricingCard href={slugs.services.chien.bilanComportemental} title="Bilan comportemental" description="" price="80,00">
+				</PricingCard>
+				<PricingCard href={slugs.services.chien.educationCanine} title="Education canine" description="" price="50,00">
+				</PricingCard>
+				<PricingCard href={slugs.services.chien.promenadeIndividuelle} title="Promenade individuelle" description="" price="15,00"></PricingCard>
+				<PricingCard href={slugs.services.chien.accompagnementAvantAdoption} title="Accompagnement avant adoption" description="" price="60,00"></PricingCard>
+				<PricingCard href={slugs.services.chien.preparationChangementsDeVie} title="Préparation aux changements de vie" description="" price="50,00">
+				</PricingCard>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+    .feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -33,7 +33,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Préparation aux changements de vie',
-				slug: '/services/chien/preparation-changement-de-vie',
+				slug: '/services/chien/preparation-changements-de-vie',
 			},
 		],
 	},

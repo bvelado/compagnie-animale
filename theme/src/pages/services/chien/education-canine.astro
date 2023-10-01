@@ -1,0 +1,80 @@
+---
+import Layout from '../../../layouts/Page.astro';
+import {
+	Container,
+	StickyTextImageSection,
+	TextSection,
+} from '../../../../../components';
+import Image from '../../../components/Image.astro';
+
+const seo = {
+	title: `Education canine | Compagnie Animale`,
+	description: `Afin que le quotidien et les promenades se déroulent au mieux et en
+				toute sécurité, il est indispensable d'apprendre à votre chien quelques
+				commandes de base telles que le rappel, la marche en laisse, le « stop »
+				ou encore le croisement de congénères dans le calme.`,
+};
+---
+
+<Layout {seo}>
+	<Container narrow>
+		<TextSection>
+			<h2>Éducation canine</h2>
+			<h3>Pourquoi des séances d'éducation ?</h3>
+			<p>
+				Afin que le quotidien et les promenades se déroulent au mieux et en
+				toute sécurité, il est indispensable d'apprendre à votre chien quelques
+				commandes de base telles que le rappel, la marche en laisse, le « stop »
+				ou encore le croisement de congénères dans le calme.
+			</p>
+			<p>
+				Mon rôle est de vous transmettre les techniques d'apprentissage des
+				principales commandes tout en vous apprenant à "lire" votre chien afin
+				de mieux communiquer avec lui.
+			</p>
+			<p>
+				L'objectif ? Satisfaire les besoins éthologiques de votre chien tout en
+				s'adaptant à votre rythme de vie et vos besoins. En un mot, apporter du
+				mieux-être dans votre quotidien et rétablir l'harmonie dans la relation
+				entre votre compagnon et vous.
+			</p>
+		</TextSection>
+		<Image
+			src="/assets/images/education.jpeg"
+			alt="Chien en promenade dans la forêt"
+		/>
+		<TextSection>
+			<h3>Comment ça se passe ?</h3>
+			<p>
+				Les séances sont individuelles, ainsi nous avançons à votre rythme et à
+				celui de votre chien. Elles se déroulent à votre domicile et dans des
+				lieux que vous pouvez fréquenter quotidiennement lors de promenades par
+				exemple.
+			</p>
+			<p>
+				Mon approche est bienveillante, dans le respect du bien-être du chien et
+				de ses besoins, l'objectif étant que votre chien comme vous preniez du
+				plaisir et que chaque exercice soit une réussite !
+			</p>
+			<p>
+				Oubliez donc les colliers étrangleurs ou électriques, coups de laisse ou
+				autres réprimandes. Avec moi, vous travaillerez avec la méthode du
+				renforcement positif (validation d'un comportement attendu par une
+				récompense telle qu'une friandise, du jeu, une caresse, ...), bien plus
+				respectueuse du bien-être de votre chien et bénéfique pour votre
+				confiance mutuelle.
+			</p>
+			<p>
+				Afin de cerner vos demandes et d'apprendre à vous connaitre, un échange
+				(téléphonique ou à votre domicile) est prévu en amont de la première
+				séance. Si vous rencontrez déjà une ou plusieurs problématiques, un
+				bilan comportemental sera nécessaire avant toute séance d'éducation.
+			</p>
+			<p>
+				Il n'y a pas d'âge minimum pour débuter, au plus vite vous démarrerez
+				l'éducation de votre chiot ou chien, au plus vite vous prendrez de
+				bonnes habitudes et lui apprendrez les règles de bonne conduite !
+			</p>
+		</TextSection>
+	</Container>
+</Layout>

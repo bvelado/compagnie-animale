@@ -3,72 +3,87 @@ import Layout from '../../../layouts/Page.astro';
 import {
 	Container,
 	StickyTextImageSection,
-    TextSection
+	TextSection,
 } from '../../../../../components';
 import Image from '../../../components/Image.astro';
 ---
+
 <Layout>
-    <Container>
-        <TextSection>
-            <h2>Bilan comportemental pour chien</h2>
-            <h3>Comprendre son chien et ses besoins pour retrouver une relation harmonieuse</h3>
-            <p>
-                Votre chien détruit ? Il n'est pas propre ? Il vous saute dessus ? 
-            </p>
-            <p>
-                Si vous rencontrez une problématique avec votre chien, je suis là pour vous aider à la comprendre et vous accompagner dans la résolution de celle-ci. 
-            </p>
-            <p>
-                L'objectif ? Satisfaire les besoins éthologiques de votre chien tout en s'adaptant à votre rythme de vie et vos besoins. En un mot, apporter du mieux-être dans votre quotidien et rétablir l'harmonie dans la relation entre votre compagnon et vous. 
-            </p>
-        </TextSection>
-        <StickyTextImageSection>
-            <div slot="text-container">
-                <h3>
-                    Déroulement du bilan comportemental
-                </h3>
-                <p>
-                    Le bilan se déroule à votre domicile afin que je puisse me rendre compte de l'évolution du chien dans son environnement et de ses liens avec les membres de la famille. 
-                </p>
-                <p>
-                    Nous échangeons autour de la problématique que vous rencontrez, de vos attentes, de l'histoire de vie de votre chien, de ses habitudes, ses activités, ses apprentissages, de votre rythme de vie. Chaque membre du foyer pouvant avoir un rôle à jouer, je privilégie les entretiens où chacun peut être présent. 
-                </p>
-                <p>
-                    Le recueil de ces informations me permet de cerner la problématique pour vous proposer des solutions personnalisées et adaptées à vous et votre chien.
-                </p>
-                <p>
-                    Ce temps d'échange est également l'occasion de vous expliquer les besoins fondamentaux du chien, la raison de la survenue du comportement qui vous dérange, les codes de communication canins. 
-                </p>
-                <p>
-                    A l'issue de cet échange, je vous envoie un compte-rendu personnalisé résumant
-                    <ul>
-                        <li>
-                            Les principaux sujets abordés lors de l'entretien
-                        </li>    
-                        <li>
-                            Les recommandations visant à solutionner la problématique
-                        </li>
-                        <li>
-                            D'autres informations utiles (signaux d'inconfort, accessoires/jouets adaptés à votre chien, etc.).
-                        </li>
-                    </ul> 
-                </p>
-                <p>
-                    Je prévois un rendez-vous téléphonique environ trois semaines après le bilan, afin d'estimer l'évolution de votre situation, de reprendre certaines notions si nécessaire, d'ajuster les recommandations, etc. 
-                </p>
-                <p>
-                    Certaines problématiques se solutionnent en une visite, d'autres peuvent nécessiter une ou plusieurs séances de suivi, cela est à adapter en fonction du cas. 
-                </p>
-                <p>
-                    Attention, certains comportements peuvent s'exprimer en raison d'un problème médical, pensez à rendre visite à votre vétérinaire avant de me contacter. 
-                </p>
-            </div>
-            <Image
-				src="/assets/images/promenade_canine_individuelle.jpg"
+	<Container narrow>
+		<TextSection>
+			<h2>Bilan comportemental pour chien</h2>
+			<h3>
+				Comprendre son chien et ses besoins pour retrouver une relation
+				harmonieuse
+			</h3>
+			<p>Votre chien détruit ? Il n'est pas propre ? Il vous saute dessus ?</p>
+			<p>
+				Si vous rencontrez une problématique avec votre chien, je suis là pour
+				vous aider à la comprendre et vous accompagner dans la résolution de
+				celle-ci.
+			</p>
+			<p>
+				L'objectif ? Satisfaire les besoins éthologiques de votre chien tout en
+				s'adaptant à votre rythme de vie et vos besoins. En un mot, apporter du
+				mieux-être dans votre quotidien et rétablir l'harmonie dans la relation
+				entre votre compagnon et vous.
+			</p>
+		</TextSection>
+		<Image
+				src="/assets/images/bilan_comportemental_chien.jpg"
 				alt="Chien en promenade dans la forêt"
-				slot="image-container"
-                caption="Rien de tel qu'une balade en forêt pour se dépenser en courant et en flairant tous les recoins!"
 			/>
-        </StickyTextImageSection>
-    </Container>
+		<TextSection>
+			<h3>Déroulement du bilan comportemental</h3>
+			<p>
+				Le bilan se déroule à votre domicile afin que je puisse me rendre
+				compte de l'évolution du chien dans son environnement et de ses liens
+				avec les membres de la famille.
+			</p>
+			<p>
+				Nous échangeons autour de la problématique que vous rencontrez, de vos
+				attentes, de l'histoire de vie de votre chien, de ses habitudes, ses
+				activités, ses apprentissages, de votre rythme de vie. Chaque membre
+				du foyer pouvant avoir un rôle à jouer, je privilégie les entretiens
+				où chacun peut être présent.
+			</p>
+			<p>
+				Le recueil de ces informations me permet de cerner la problématique
+				pour vous proposer des solutions personnalisées et adaptées à vous et
+				votre chien.
+			</p>
+			<p>
+				Ce temps d'échange est également l'occasion de vous expliquer les
+				besoins fondamentaux du chien, la raison de la survenue du
+				comportement qui vous dérange, les codes de communication canins.
+			</p>
+			<p>
+				A l'issue de cet échange, je vous envoie un compte-rendu personnalisé
+				résumant
+				<ul>
+					<li>Les principaux sujets abordés lors de l'entretien</li>
+					<li>Les recommandations visant à solutionner la problématique</li>
+					<li>
+						D'autres informations utiles (signaux d'inconfort,
+						accessoires/jouets adaptés à votre chien, etc.).
+					</li>
+				</ul>
+			</p>
+			<p>
+				Je prévois un rendez-vous téléphonique environ trois semaines après le
+				bilan, afin d'estimer l'évolution de votre situation, de reprendre
+				certaines notions si nécessaire, d'ajuster les recommandations, etc.
+			</p>
+			<p>
+				Certaines problématiques se solutionnent en une visite, d'autres
+				peuvent nécessiter une ou plusieurs séances de suivi, cela est à
+				adapter en fonction du cas.
+			</p>
+			<p>
+				Attention, certains comportements peuvent s'exprimer en raison d'un
+				problème médical, pensez à rendre visite à votre vétérinaire avant de
+				me contacter.
+			</p>
+		</TextSection>
+	</Container>
 </Layout>

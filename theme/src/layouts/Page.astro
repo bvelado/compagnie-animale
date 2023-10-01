@@ -1,8 +1,9 @@
 ---
-import { Header, Button, Footer } from '@littlesticks/odyssey-theme-components';
+import {  Button, Footer } from '@littlesticks/odyssey-theme-components';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
+import Header from '../../../components/core/Header.astro'
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
@@ -21,7 +22,6 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<Logo />
 		</span>
-		<Button slot="action-item" href="/theme/get-started">Get Started</Button>
 	</Header>
 	<div id="page">
 		<slot />

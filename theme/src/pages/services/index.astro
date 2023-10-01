@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Page.astro';
+import {
+Button,
+	Container,
+	CtaCardSection,
+	FeatureCard,
+	TextSection,
+} from '../../../../components';
+import {slugs} from '../../utils/consts';
+---
+
+<Layout>
+	<Container>
+		<CtaCardSection>
+			<h2>Services pour chiens</h2>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, amet
+				quae natus itaque doloremque inventore cumque perspiciatis, alias
+				tempora ad dignissimos exercitationem porro illo animi corporis
+				veritatis a ipsum provident.
+			</p>
+		</CtaCardSection>
+		<TextSection>
+			<section class="services-grid">
+				<div class="service-card">
+					<h3>Bilan comportemental</h3>
+					<p>Bilan comportemental suite à la prise de contact</p>
+                    <Button href={slugs.services.chien.bilanComportemental}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Education canine</h3>
+					<p>Séance d'éducation canine</p>
+                    <Button href={slugs.services.chien.educationCanine}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Accompagnement avant adoption</h3>
+					<p>Prévoir l'arrivée d'un chiot au sein de votre famille</p>
+                    <Button href={slugs.services.chien.accompagnementAvantAdoption}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Promenade individuelle</h3>
+					<p></p>
+                    <Button href={slugs.services.chien.promenadeIndividuelle}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Préparation aux changements de vie</h3>
+					<p>Vous accompagner pour les changements dans votre quotidien</p>
+                    <Button href={slugs.services.chien.preparationChangementsDeVie}>Plus d'informations</Button>
+				</div>
+			</section>
+		</TextSection>
+	</Container>
+	<Container>
+		<CtaCardSection>
+			<h2>Services pour chats</h2>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eligendi
+				esse deleniti possimus quos velit voluptate sit asperiores ipsam nulla?
+			</p>
+		</CtaCardSection>
+		<TextSection>
+			<section class="services-grid">
+				<div class="service-card">
+					<h3>Bilan comportemental</h3>
+					<p>Bilan comportemental suite à la prise de contact</p>
+                    <Button href={slugs.services.chat.bilanComportemental}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Accompagnement avant adoption</h3>
+					<p>Prévoir l'arrivée d'un chiot au sein de votre famille</p>
+                    <Button href={slugs.services.chat.accompagnementAvantAdoption}>Plus d'informations</Button>
+				</div>
+				<div class="service-card">
+					<h3>Préparation aux changements de vie</h3>
+					<p>Vous accompagner pour les changements dans votre quotidien</p>
+                    <Button href={slugs.services.chat.preparationChangementsDeVie}>Plus d'informations</Button>
+				</div>
+			</section>
+		</TextSection>
+	</Container>
+</Layout>
+
+<style>
+	.services-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+
+        & .service-card {
+            margin-bottom: 1.6rem;
+        }
+	}
+    @media (min-width: 769px) {
+        .services-grid {
+            grid-template-columns: repeat(3, 1fr);
+
+            & .service-card {
+                padding-right: 1.6rem;
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+</style>

@@ -43,10 +43,10 @@ const { navData, rightMenu } = Astro.props;
 <header id="odysseyNavHeader" class={`${rightMenu ? "header--right" : ``.trim()}`}>
   <div class="header-logo-menu__container">
   <button id="menuButton" title="Open Main Menu">
-    <span id="menuButtonIconHam">
+    <span id="menuButtonIconHam" class="header-logo-menu-button__icon">
       <Icon name="ic:baseline-menu" width="24px" height="24px" />
     </span>
-    <span id="menuButtonIconClose" hidden>
+    <span id="menuButtonIconClose" class="header-logo-menu-button__icon" hidden>
       <Icon name="ic:baseline-close" width="24px" height="24px" />
     </span>
   </button>
@@ -131,8 +131,12 @@ const { navData, rightMenu } = Astro.props;
   }
   @media(max-width: 600px) {
     #menuButton {
-      display: block;  
+      display: flex;  
       z-index: 100;
+
+      .header-logo-menu-button__icon:not([hidden]) {
+        display:flex;
+      }
     }
     .header-nav__container {
       width: 100%;

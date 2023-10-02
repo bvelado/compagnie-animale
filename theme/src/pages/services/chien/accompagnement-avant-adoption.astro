@@ -1,0 +1,66 @@
+---
+import { Container, TextSection } from '../../../../../components';
+import Image from '../../../components/Image.astro';
+
+import Layout from '../../../layouts/Page.astro';
+
+const seo = {
+	title: `Accompagnement avant adoption | Compagnie Animale`,
+	description: `Vous avez pour projet d’adopter un chien ou un chat et vous souhaitez
+				être accompagné afin d’accueillir votre boule de poil le plus
+				sereinement possible ? En demandant conseil avant l’adoption de votre
+				compagnon, vous mettez toutes les chances de votre côté pour que le
+				quotidien avec lui se passe au mieux !`,
+};
+---
+
+<Layout {seo}>
+	<Container narrow>
+		<TextSection>
+			<h2>Accompagnement avant adoption</h2>
+			<p>
+				Vous avez pour projet d’adopter un chien ou un chat et vous souhaitez
+				être accompagné afin d’accueillir votre boule de poil le plus
+				sereinement possible ? En demandant conseil avant l’adoption de votre
+				compagnon, vous mettez toutes les chances de votre côté pour que le
+				quotidien avec lui se passe au mieux !
+			</p>
+			<p>
+				Selon vos souhaits, vos habitudes de vie et votre environnement, je peux
+				vous conseiller sur la/les race(s) à privilégier, sur les lieux
+				d’adoption (élevage, refuge,…), l’âge d’adoption, les aménagements à
+				prévoir, le matériel à choisir. C'est aussi l'occasion de vous présenter
+				les différents modes de communication canins/félins et signaux
+				d'inconfort, ou encore d'aborder la notion d'apprentissage chez le chat
+				ou le chien. Toutes ces notions en tête, vous partirez avec de bonnes
+				bases pour offrir la meilleure des vies à votre compagnon !
+			</p>
+		</TextSection>
+		<Image
+			src="/assets/images/accompagnement_avant_adoption_chien.jpg"
+			alt="Chien en promenade dans la forêt"
+		/>
+		<TextSection>
+			<p>
+				De même, si vous avez déjà d’autres animaux, je peux vous indiquer la
+				marche à suivre pour que l’intégration du nouvel arrivant se déroule au
+				mieux et que l’équilibre du foyer se reforme au plus vite.
+			</p>
+			<p>
+				Adopter un animal de compagnie est une responsabilité, mieux vaut donc
+				vous laisser un temps de réflexion que prendre une décision trop
+				rapidement et risquer de vous trouver en difficulté par la suite. Votre
+				patience sera largement récompensée par les années de bonheur et de
+				complicité que vous vivrez ensemble !
+			</p>
+			<p>
+				N'hésitez pas à préparer une liste de questions avant notre entretien,
+				je profiterai justement de ce temps pour y répondre.
+			</p>
+		</TextSection>
+	</Container>
+</Layout>
+
+<style>
+
+</style>

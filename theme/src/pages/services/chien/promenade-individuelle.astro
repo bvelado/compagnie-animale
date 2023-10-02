@@ -2,6 +2,7 @@
 import {
 	Container,
 	StickyTextImageSection,
+	TextSection,
 } from '../../../../../components';
 import Image from '../../../components/Image.astro';
 
@@ -14,69 +15,67 @@ const seo = {
 ---
 
 <Layout {seo}>
-	<Container>
-		<StickyTextImageSection>
-			<section slot="text-container">
-				<h2>Promenades canines individuelles</h2>
-				<h3>Pourquoi offrir une promenade à mon chien ?</h3>
-				<p>
-					Votre rythme de vie ou un bouleversement vous empêchent d’assurer les
-					promenades quotidiennes de votre chien ? Vous vous absentez longtemps
-					en journée et le retrouvez très excité à votre retour ?
-				</p>
-				<p>
-					Offrir à son chien des promenades quotidiennes est primordial pour son
-					équilibre, elles sont l’occasion pour lui de se dépenser physiquement
-					et mentalement, de découvrir de nouveaux lieux, de flairer de
-					nouvelles odeurs, de rencontrer des congénères (attention, avoir accès
-					à un jardin n’est pas suffisant pour un chien, cela revient pour lui à
-					vivre confiné).
-				</p>
-				<h3>Comment ça se passe ?</h3>
-				<p>
-					Je vous propose de le promener, une à deux fois par jour, selon votre
-					demande. Nous convenons du jour et de l'heure, je viens chercher votre
-					chien et le ramène à votre domicile. Les sorties se font dans des
-					environnements variés, au rythme de votre chien afin qu’il puisse
-					assouvir son besoin de flairage, rencontrer d’autres chiens, se
-					baigner, courir, jouer... en un mot, vivre sa meilleure vie de chien !
-				</p>
-				<p>
-					Résultat ? Votre chien se dépense davantage, s’ennuie moins la
-					journée, est plus épanoui et vous le retrouvez plus calme et apaisé en
-					rentrant.
-				</p>
-				<p>
-					Les balades se font en longe ou en libre (après plusieurs balades, si
-					votre chien revient bien au rappel et que j'estime avoir établi une
-					relation de confiance suffisante) afin que votre compagnon en profite
-					un maximum.
-				</p>
-				<p>
-					En amont de la première promenade, nous nous rencontrons à votre
-					domicile afin de faire connaissance pour que vous puissiez me confier
-					votre chien sereinement. C'est aussi l'occasion de rencontrer votre
-					compagnon, de commencer à tisser un lien avec lui, me renseigner sur
-					ses habitudes, ses plaisirs/rituels de balade, etc. Un contrat vous
-					sera remis lors de cette rencontre.
-				</p>
-				<p>
-					Pour les promenades canines, j’interviens sur les communes de Mimizan,
-					Aureilhan, Ste-Eulalie-en-Born et Bias.
-				</p>
-				<p>
-					Si vous avez plusieurs chiens et souhaitez qu’ils soient promenés en
-					même temps, veuillez me contacter directement afin que nous en
-					discutions ensemble.
-				</p>
-			</section>
-			<Image
-				src="/assets/images/promenade_canine_individuelle.jpg"
-				alt="Chien en promenade dans la forêt"
-				slot="image-container"
-                caption="Rien de tel qu'une balade en forêt pour se dépenser en courant et en flairant tous les recoins!"
-			/>
-		</StickyTextImageSection> 
+	<Container narrow>
+		<TextSection>
+			<h2>Promenades canines individuelles</h2>
+			<h3>Pourquoi offrir une promenade à mon chien ?</h3>
+			<p>
+				Votre rythme de vie ou un bouleversement vous empêchent d’assurer les
+				promenades quotidiennes de votre chien ? Vous vous absentez longtemps en
+				journée et le retrouvez très excité à votre retour ?
+			</p>
+			<p>
+				Offrir à son chien des promenades quotidiennes est primordial pour son
+				équilibre, elles sont l’occasion pour lui de se dépenser physiquement et
+				mentalement, de découvrir de nouveaux lieux, de flairer de nouvelles
+				odeurs, de rencontrer des congénères (attention, avoir accès à un jardin
+				n’est pas suffisant pour un chien, cela revient pour lui à vivre
+				confiné).
+			</p>
+		</TextSection>
+		<Image
+			src="/assets/images/promenade_canine_individuelle.jpg"
+			alt="Chien en promenade dans la forêt"
+			caption="Rien de tel qu'une balade en forêt pour se dépenser en courant et en flairant tous les recoins!"
+		/>
+		<TextSection>
+			<h3>Comment ça se passe ?</h3>
+			<p>
+				Je vous propose de le promener, une à deux fois par jour, selon votre
+				demande. Nous convenons du jour et de l'heure, je viens chercher votre
+				chien et le ramène à votre domicile. Les sorties se font dans des
+				environnements variés, au rythme de votre chien afin qu’il puisse
+				assouvir son besoin de flairage, rencontrer d’autres chiens, se baigner,
+				courir, jouer... en un mot, vivre sa meilleure vie de chien !
+			</p>
+			<p>
+				Résultat ? Votre chien se dépense davantage, s’ennuie moins la journée,
+				est plus épanoui et vous le retrouvez plus calme et apaisé en rentrant.
+			</p>
+			<p>
+				Les balades se font en longe ou en libre (après plusieurs balades, si
+				votre chien revient bien au rappel et que j'estime avoir établi une
+				relation de confiance suffisante) afin que votre compagnon en profite un
+				maximum.
+			</p>
+			<p>
+				En amont de la première promenade, nous nous rencontrons à votre
+				domicile afin de faire connaissance pour que vous puissiez me confier
+				votre chien sereinement. C'est aussi l'occasion de rencontrer votre
+				compagnon, de commencer à tisser un lien avec lui, me renseigner sur ses
+				habitudes, ses plaisirs/rituels de balade, etc. Un contrat vous sera
+				remis lors de cette rencontre.
+			</p>
+			<p>
+				Pour les promenades canines, j’interviens sur les communes de Mimizan,
+				Aureilhan, Ste-Eulalie-en-Born et Bias.
+			</p>
+			<p>
+				Si vous avez plusieurs chiens et souhaitez qu’ils soient promenés en
+				même temps, veuillez me contacter directement afin que nous en
+				discutions ensemble.
+			</p>
+		</TextSection>
 	</Container>
 </Layout>
 

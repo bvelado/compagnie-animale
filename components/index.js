@@ -1,5 +1,5 @@
 // Core
-export { default as Container } from "./core/Container.astro";
+export { default as Container, ContainerColors } from "./core/Container.astro";
 export { default as SkipLink } from "./core/SkipLink.astro";
 export { default as Header } from "./core/Header.astro";
 export { default as Footer } from "./core/Footer.astro";
@@ -14,7 +14,7 @@ export { default as Button } from "./buttons/Button.astro";
 export { default as FeatureCard } from "./cards/FeatureCard.astro";
 
 // Sections
-export { default as TextSection } from "./sections/TextSection.astro";
+export { default as TextSection, TextSectionColors } from "./sections/TextSection.astro";
 export { default as TextCardSection } from "./sections/TextCardSection.astro";
 export { default as CustomerQuoteSection } from "./sections/CustomerQuoteSection.astro";
 export { default as ThreeColumnTextSection } from "./sections/ThreeColumnTextSection.astro";

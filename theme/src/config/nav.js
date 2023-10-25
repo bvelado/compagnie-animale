@@ -1,22 +1,24 @@
+import { links } from './links';
+
 export const nav = [
 	{
 		title: 'Accueil',
-		slug: '/',
+		url: '/',
 	},
 	{
 		title: 'Services',
-		slug: '/services',
+		url: '/services',
 	},
 	{
 		title: 'Tarifs',
-		slug: '/tarifs',
+		url: '/tarifs',
 	},
 	{
 		title: 'À propos',
-		slug: '/a-propos',
+		url: '/a-propos',
 	},
 	{
 		title: 'Contact',
-		slug: '/contact',
+		url: '/contact',
 	},
 ];

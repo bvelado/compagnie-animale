@@ -3,25 +3,37 @@ import { default as FeatureCard } from '../../../components/cards/FeatureCard.as
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
-import Container from '../../../components/core/Container.astro';
+import { Container, TextSection, ContainerColors } from '../../../components';
+import Image from '../components/Image.astro';
 ---
 
 <Layout>
 	<HomeHeroSection />
-	<Container>
-		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
+	<Container narrow>
+		<TextSection>
 			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
+				Educatrice comportementaliste canin et félin, je vous accompagne vers un
+				quotidien serein avec votre compagnon, pour répondre à vos attentes, vos
+				besoins et ceux de votre animal.
 			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
-			</div>
-		</section>
+			<p>
+				Parce qu'il est prouvé scientifiquement qu'un climat serein et de
+				confiance favorise l'apprentissage, mes méthodes de travail sont
+				positives et bienveillantes, respectueuses de l’animal et de son
+				bien-être.
+			</p>
+		</TextSection>
+		<Image
+			src="/assets/images/home_01.jpeg"
+			alt="En harmonie avec votre chien ou votre chat"
+		/>
+		<TextSection>
+			<p>
+				Avec moi, attendez-vous à délaisser certaines habitudes et préjugés,
+				mais préparez-vous surtout à (re)découvrir votre animal et à prendre du
+				plaisir avec lui !
+			</p>
+		</TextSection>
 	</Container>
 
 	<Container>
@@ -32,24 +44,31 @@ import Container from '../../../components/core/Container.astro';
 				legal pages, blog posts, etc.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
+				<FeatureCard
+					href="/company/about"
+					title="About Page"
+					imgSrc="/assets/images/home/screenshots/about"
+				/>
+				<FeatureCard
+					href="/company/contact"
+					title="Contact Page"
+					imgSrc="/assets/images/home/screenshots/contact"
+				/>
+				<FeatureCard
+					href="/blog/"
+					title="Blog Page"
+					imgSrc="/assets/images/home/screenshots/blog"
+				/>
 				<FeatureCard
 					href="/blog/posts/remote-work-mental-health"
 					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
+					imgSrc="/assets/images/home/screenshots/blog-post"
+				/>
 				<FeatureCard
 					href="/company/legal"
 					imgSrc="/assets/images/home/screenshots/legal"
 					title="Legal Page"
-				>
-				</FeatureCard>
+				/>
 			</div>
 		</section>
 	</Container>
@@ -63,14 +82,12 @@ import Container from '../../../components/core/Container.astro';
 					href="/theme/get-started"
 					imgSrc="/assets/images/home/screenshots/get-started"
 					title="Get Started"
-				>
-				</FeatureCard>
+				/>
 				<FeatureCard
 					href="/theme/style-guide"
 					imgSrc="/assets/images/home/screenshots/style-guide"
 					title="Style Guide"
-				>
-				</FeatureCard>
+				/>
 			</div>
 		</section>
 	</Container>

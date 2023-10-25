@@ -2,13 +2,19 @@
 import Layout from '../../../layouts/Page.astro';
 import {
 	Container,
-	StickyTextImageSection,
 	TextSection,
 } from '../../../../../components';
 import Image from '../../../components/Image.astro';
+import { links } from '../../../config/links';
+
+const seo = {
+	title: 'Bilan comportemental pour chien',
+	description:
+		'Votre chien détruit ? Il n\'est pas propre ? Il vous saute dessus ? Si vous rencontrez une problématique avec votre chien, je suis là pour vous aider à la comprendre et vous accompagner dans la résolution de celle-ci.',
+};
 ---
 
-<Layout>
+<Layout {seo} link={links.dogBehavior} >
 	<Container narrow>
 		<TextSection>
 			<h2>Bilan comportemental pour chien</h2>

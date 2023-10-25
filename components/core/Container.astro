@@ -1,8 +1,30 @@
 ---
-const {narrow} = Astro.props;
+export enum ContainerColors {
+  None,
+  Primary,
+  Surface1,
+  Surface2
+} 
+
+const {narrow, colors=ContainerColors.None} = Astro.props;
+
+function mapToColorClass(input: ContainerColors) {
+  switch (input) {
+    case ContainerColors.Primary:
+      return "container-primary";
+    case ContainerColors.Surface1:
+      return "container-surface1";
+    case ContainerColors.Surface2:
+      return "container-surface2";
+    default:
+      return "";
+  }
+}
+
+let colorClass: TextSectionColors = mapToColorClass(colors);
 ---
 
-<div class={`content__container ${narrow ? `content__container--narrow` : ``}`}>
+<div class={`content__container ${narrow ? `content__container--narrow` : ``} ${colorClass}`}>
   <slot></slot>
 </div>
 
@@ -14,5 +36,17 @@ const {narrow} = Astro.props;
   }
   .content__container--narrow {
     max-width: var(--container-max-width-narrow);
+  }
+  .container-primary {
+    background-color: var(--theme-primary);
+    color: var(--theme-on-primary);
+  }
+  .container-surface1 {
+    background-color: var(--theme-surface-1);
+    color: var(--theme-on-surface-1);
+  }
+  .container-surface2 {
+    background-color: var(--theme-surface-2);
+    color: var(--theme-on-surface-2);
   }
 </style>

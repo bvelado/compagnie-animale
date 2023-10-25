@@ -1,0 +1,54 @@
+---
+import { Container, TextSection } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Page.astro';
+import Image from '../components/Image.astro';
+
+const seo = {
+  title: `Tarifs | Compagnie Animale`,
+  description: `Tarifs des différents services proposés par Compagnie Animale.`,
+};
+
+---
+
+<Layout seo={seo}>
+	<Container>
+		<TextSection  narrow>
+            <h1>Contact</h1>
+			<p>
+				Educatrice comportementaliste canin et félin, je vous accompagne vers un quotidien serein avec votre compagnon, pour répondre à vos attentes, vos besoins et ceux de votre animal.
+			</p>
+			<p>
+                Parce qu'il est prouvé scientifiquement qu'un climat serein et de confiance favorise l'apprentissage, mes méthodes de travail sont positives et bienveillantes, respectueuses de l’animal et de son bien-être. 
+			</p>
+        </TextSection>
+        <Image
+			src="/assets/images/contact.jpeg"
+			alt="En harmonie avec votre chien ou votre chat"
+		/>
+        <TextSection narrow>
+			<p>
+                Avec moi, attendez-vous à délaisser certaines habitudes et préjugés, mais préparez-vous surtout à (re)découvrir votre animal et à prendre du plaisir avec lui ! 
+			</p>
+			<p>
+                Située dans le nord des Landes, j'interviens à Mimizan et ses alentours pour différents services : bilans comportementaux, éducation canine, promenades canines, conseils avant adoption ... Je vous invite à me contacter pour que nous déterminions ensemble la prestation qui vous conviendra. 
+			</p>
+		</TextSection>
+	</Container>
+</Layout>
+
+<style>
+    .feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

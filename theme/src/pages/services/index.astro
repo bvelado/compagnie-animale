@@ -4,13 +4,17 @@ import {
 Button,
 	Container,
 	CtaCardSection,
-	FeatureCard,
 	TextSection,
 } from '../../../../components';
 import {slugs} from '../../utils/consts';
+
+const seo = {
+	title: 'Services',
+	description: 'Les services proposés par Compagnie Animale',
+};
 ---
 
-<Layout>
+<Layout {seo}>
 	<Container>
 		<CtaCardSection>
 			<h2>Services pour chiens</h2>

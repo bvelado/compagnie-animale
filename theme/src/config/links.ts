@@ -1,3 +1,9 @@
+export interface Link {
+	url: string;
+	title: string;
+	parent?: string;
+}
+
 export const links = {
 	home: { url: '/', title: 'Accueil' },
 	services: { url: '/services', title: 'Services', parent: 'home' },
@@ -47,7 +53,7 @@ export const links = {
 };
 
 // Build breadcrumbs using the links given the current page link
-export function buildBreadcrumbs(currentLink) {
+export function buildBreadcrumbs(currentLink: Link): Link[] {
 	const breadcrumbs = [];
 	let current = currentLink;
 	while (current) {

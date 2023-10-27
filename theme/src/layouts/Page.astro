@@ -7,11 +7,9 @@ import Header from '../../../components/core/Header.astro'
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-
 export interface Props {
 	seo?: BaseHeadProps;
-	link: {url: string, parent?: string, title: string};
+	link?: {url: string, parent?: string, title: string};
 }
 
 import { nav } from '../config/nav.js';
@@ -19,7 +17,7 @@ import { buildBreadcrumbs } from '../config/links';
 
 const { seo, link } = Astro.props as Props;
 
-const breadcrumbs = link ? buildBreadcrumbs(link) : [];
+const breadcrumbs = (link ? buildBreadcrumbs(link) : []).map(l => ({ text: l.title, href: l.url }));
 ---
 
 <Layout seo={seo}>
@@ -29,7 +27,6 @@ const breadcrumbs = link ? buildBreadcrumbs(link) : [];
 		</span>
 	</Header>
 	<div id="page">
-		<Breadcrumbs breadcrumbs={breadcrumbs}></Breadcrumbs>
 		<slot />
 	</div>
 	<Footer
@@ -37,9 +34,9 @@ const breadcrumbs = link ? buildBreadcrumbs(link) : [];
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
 		footerLists={footerLists}
-    footerSocials={footerSocials}
+    	footerSocials={footerSocials}
 		copyrightName={settings.name}
-    showLittleSticksPlug={settings.showLittleSticksPlug}
+    	showLittleSticksPlug={settings.showLittleSticksPlug}
 	>
 		<Logo slot="logo" />
 	</Footer>

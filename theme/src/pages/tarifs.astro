@@ -5,15 +5,15 @@ import Layout from '../layouts/Page.astro';
 import PricingCard from '../../../components/cards/PricingCard.astro';
 
 import { slugs } from '../utils/consts';
+import { links } from '../config/links';
 
 const seo = {
   title: `Tarifs | Compagnie Animale`,
   description: `Tarifs des différents services proposés par Compagnie Animale.`,
 };
-
 ---
 
-<Layout seo={seo}>
+<Layout {seo}>
 	<Container>
 		<TextSection  narrow>
 			<h2>Tarifs</h2>

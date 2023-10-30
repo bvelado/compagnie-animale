@@ -4,10 +4,10 @@ const { src, alt, caption } = Astro.props;
 
 <div class="image__wrapper">
 	<img class="image__img" {src} {alt} loading="lazy" decoding="async">
-    { caption && 
+	</img>
+	{ caption && 
         <span class="image__caption">{caption}</span>
     }
-	</img>
 </div>
 
 <style>
@@ -19,15 +19,12 @@ const { src, alt, caption } = Astro.props;
 		border-radius: var(--theme-shape-radius);
 	}
     .image__caption {
+		display: block;
+
 		font-style: italic;
 		text-align: center;
 		/* font-size: var(--font-size-sm); */
-        position: absolute;
-        bottom: 0;
-        padding: 1rem;
-        color: #fff;
-        background-color: rgba(0,0,0,0.6);
-        border-bottom-left-radius: var(--theme-shape-radius);
-        border-bottom-right-radius: var(--theme-shape-radius);
+        padding: 0.4rem 2rem 0rem 2rem;
+        color: var(--theme-on-bg);
 	}
 </style>

@@ -50,7 +50,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Préparation aux changements de vie',
-				slug: '/services/chat/preparation-changement-de-vie',
+				slug: '/services/chat/preparation-changements-de-vie',
 			},
 		],
 	},

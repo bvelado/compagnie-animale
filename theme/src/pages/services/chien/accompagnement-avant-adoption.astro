@@ -1,6 +1,7 @@
 ---
 import { Container, TextSection } from '../../../../../components';
 import Image from '../../../components/Image.astro';
+import { links } from '../../../config/links';
 
 import Layout from '../../../layouts/Page.astro';
 
@@ -14,7 +15,7 @@ const seo = {
 };
 ---
 
-<Layout {seo}>
+<Layout {seo} link={links.dogAdoption}>
 	<Container narrow>
 		<TextSection>
 			<h2>Accompagnement avant adoption</h2>

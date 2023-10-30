@@ -16,8 +16,8 @@
     "theme"
   ],
   "dependencies": {
-    "astro": "^1.0.2",
-    "astro-icon": "^0.7.3"
+    "astro": "^3.3.4",
+    "astro-icon": "^0.8.1"
   },
   "publishConfig": {
     "access": "public"

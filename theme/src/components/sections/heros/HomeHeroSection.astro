@@ -1,55 +1,57 @@
 ---
 import { Icon } from 'astro-icon';
-import { Container, Button } from '@littlesticks/odyssey-theme-components';
+import { default as Button } from '../../Button.astro';
 ---
 
-<Container>
-	<section class="hero-section__section">
-		<div class="hero-section__text">
+<section class="hero-section__section">
+	<div class="hero-section__content">
+		<div class="hero-text__container">
 			<h1>Compagnie Animale</h1>
 			<p>Mieux comprendre votre animal pour évoluer en harmonie avec lui.</p>
-			<div class="hero-btns__container">
-				<Button href="/contact" customIcon>
-					Me contacter
-					<Fragment slot="icon">
-						<Icon name="ic:baseline-chevron-right" />
-					</Fragment>
-				</Button>
-				<Button href="/services" unelevated>Services proposés</Button>
-			</div>
 		</div>
-		<div class="hero-section__image">
-			<picture>
-				<img
-					src="/assets/images/home.jpg"
-					alt="Compagnie Animale"
-					id="home-hero-image"
-				/>
-			</picture>
+		<div class="hero-btns__container">
+			<Button href="/contact" customIcon>
+				Me contacter
+				<Fragment slot="icon">
+					<Icon name="ic:baseline-chevron-right" />
+				</Fragment>
+			</Button>
+			<Button href="/services" unelevatedPrimary>Services</Button>
 		</div>
-	</section>
-</Container>
+	</div>
+</section>
 
 <style>
 	.hero-section__section {
-		margin: var(--section-margin) auto;
-		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		align-items: center;
-		gap: 1rem;
+		display: flex;
+		min-height: clamp(70vh, 100vw, calc(80vh - 4rem));
+		background-image: url("assets/images/home.jpg");
+		background-size: cover;
+		background-position: center;
 	}
-	.hero-section__text {
-		justify-self: center;
-		max-width: 25rem;
+	.hero-section__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		width: 100%;
+		margin: 0;
+		padding: var(--container-padding);
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+
+		background-color: rgba(0,0,0,0.28);
+	}
+	.hero-text__container {
+		display: flex;
+		flex-direction: column;
+
+		color: var(--theme-on-primary);
+		text-align: center;
 	}
 	.hero-btns__container {
 		display: flex;
-		align-items: center;
 		gap: 1rem;
-	}
-	.hero-btns__container {
-		margin-right: 1rem;
 	}
 	.hero-section__image {
 		display: flex;
@@ -62,8 +64,8 @@ import { Container, Button } from '@littlesticks/odyssey-theme-components';
 		border-radius: var(--theme-shape-radius);
 	}
 	@media (max-width: 768px) {
-		.hero-section__section {
-			grid-template-columns: 1fr;
+		.hero-section__content {
+			padding: var(--container-padding);
 		}
 		.hero-btns__container {
 			flex-direction: column;

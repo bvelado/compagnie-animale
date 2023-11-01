@@ -6,10 +6,10 @@ export interface Link {
 
 export const links = {
 	home: { url: '/', title: 'Accueil' },
-	services: { url: '/services', title: 'Services', parent: 'home' },
-	tarifs: { url: '/tarifs', title: 'Tarifs', parent: 'home' },
-	about: { url: '/a-propos', title: 'À propos', parent: 'home' },
-	contact: { url: '/contact', title: 'Contact', parent: 'home' },
+	services: { url: '/services', title: 'Services' },
+	tarifs: { url: '/tarifs', title: 'Tarifs' },
+	about: { url: '/a-propos', title: 'À propos' },
+	contact: { url: '/contact', title: 'Contact' },
 	dogEducation: {
 		url: '/services/chien/education-canine',
 		title: 'Éducation canine',
@@ -51,6 +51,43 @@ export const links = {
 		parent: 'services',
 	},
 };
+
+export interface HeaderNavItemData {
+	title: string;
+	url: string;
+	children?: {
+		title: string;
+		items: HeaderNavItemData[];
+	}[];
+}
+
+export const navItems: HeaderNavItemData[] = [
+	{
+		...links.services, children: [
+			{
+				title: 'Chien',
+				items: [
+					links.dogEducation,
+					links.dogBehavior,
+					links.dogWalk,
+					links.dogAdoption,
+					links.dogLife
+				]
+			},
+			{
+				title: 'Chat',
+				items: [
+					links.catBehavior,
+					links.catAdoption,
+					links.catLife,
+				]
+			}
+		]
+	},
+	links.tarifs,
+	links.about,
+	links.contact,
+];
 
 // Build breadcrumbs using the links given the current page link
 export function buildBreadcrumbs(currentLink: Link): Link[] {

@@ -1,19 +1,44 @@
 ---
----
+import CompanyIcon from "./CompanyIcon.astro";
 
-<p class="compagnie-animale-logo">COMPAGNIE ANIMALE</p>
+const { iconColor } = Astro.props;
+
+
+---
+<div class="compagnie-animale-logo">
+	<i class="compagnie-animale-logo-icon"><CompanyIcon dogColor={iconColor} catColor={iconColor}></i>
+	<p class="compagnie-animale-logo-text">COMPAGNIE ANIMALE</p>
+</div>
 
 <style>
 	.compagnie-animale-logo {
-		width: fit-content;
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
 		margin: 0;
-		font-family: var(--theme-font-family-logo);
-    	font-size: var(--font-size-md);
-		font-weight: 'regular';
-		color: inherit;
 	}
 	.compagnie-animale-logo:hover {
 		text-decoration: underline;
 		cursor: pointer;
+	}
+	.compagnie-animale-logo-text {
+		display: block;
+		flex: 1;
+		font-family: var(--theme-font-family-logo);
+    	font-size: var(--font-size-md);
+		font-weight: var(--font-weight-bold);
+		color: inherit;
+		margin: 0;
+	}
+	i.compagnie-animale-logo-icon {
+		display: block;
+		flex: 0 0 var(--font-size-md);
+		height: var(--font-size-md);
+		margin-right: 0.6ch;
+	}
+	@media screen and (max-width: 320px) {
+		.compagnie-animale-logo-text {
+			display: none;
+		}
 	}
 </style>

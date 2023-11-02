@@ -1,0 +1,72 @@
+---
+import { HeaderNavItemData } from "../config/links";
+
+interface Props {
+    navItem: HeaderNavItemData,
+    isRootItem: boolean
+}
+const { navItem, isRootItem } = Astro.props;
+const navItemClasses = `nav-item__item ${isRootItem ? 'nav-item__root' : ''}`;
+---
+{navItem.children && navItem.children.length > 0 ? (
+<>
+    <li class={`${navItemClasses} nav-item__subnav`}>
+        <a href="#">{navItem.title}</a>
+    </li>
+    {navItem.children.map(child => (
+        <>
+            <li class="nav-item__item nav-item__subtitle">{child.title}</li>
+            {child.items.map(item => <Astro.self navItem={item} isRootItem={false} />)}
+        </>
+    ))}
+</>
+) : (
+    <li class={navItemClasses}><a href={navItem.url} >{navItem.title}</a></li>
+)}
+
+<style>
+    li.nav-item__root {
+        display: flex;
+    }
+    li.nav-item__item:not(.nav-item__root) {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+    }
+    li.nav-item__item a {
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.72;
+        transition: opacity linear 150ms;
+    }
+    li.nav-item__item a:hover {
+        opacity: 1;
+    }
+    li.nav-item__item.nav-item__subtitle {
+        font-size: var(--font-size-medium);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+</style>
+
+<style is:global>
+    header[mobile-menu-open] nav ul li {
+       font-size: var(--font-size-md);
+    }
+    header[mobile-menu-open] nav ul li.nav-item__root {
+       font-size: var(--font-size-lg);
+    }
+    header[mobile-menu-open] nav ul li.nav-item__item:not(.nav-item__root) {
+        display: flex;
+    }
+    header:not([mobile-menu-open]) nav ul li.nav-item__item a {
+        margin-right: 1rem;
+    }
+    header[mobile-menu-open] nav li.nav-item__item:not(.nav-item__subnav) a {
+        margin: 0.6rem 0 0.6rem 0;
+    }
+    header[mobile-menu-open] nav li.nav-item__subnav a {
+        margin-bottom: 0.4rem;
+    }
+</style>

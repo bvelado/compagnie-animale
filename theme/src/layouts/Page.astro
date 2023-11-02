@@ -3,28 +3,23 @@ import { Footer } from '@littlesticks/odyssey-theme-components';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
-import Header from '../../../components/core/Header.astro'
+import Header from '../components/Header.astro'
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
 export interface Props {
 	seo?: BaseHeadProps;
-	link?: {url: string, parent?: string, title: string};
 }
 
-import { nav } from '../config/nav.js';
-import { buildBreadcrumbs } from '../config/links';
+import { navItems } from '../config/links';
 
-const { seo, link } = Astro.props as Props;
+const { seo } = Astro.props as Props;
 
-const breadcrumbs = (link ? buildBreadcrumbs(link) : []).map(l => ({ text: l.title, href: l.url }));
 ---
 
 <Layout seo={seo}>
-	<Header rightMenu navData={nav} slot="header">
-		<span slot="logo">
-			<Logo />
-		</span>
+	<Header rightMenu navData={navItems} slot="header">
+		<Logo slot="logo"/>
 	</Header>
 	<div id="page">
 		<slot />
@@ -38,6 +33,6 @@ const breadcrumbs = (link ? buildBreadcrumbs(link) : []).map(l => ({ text: l.tit
 		copyrightName={settings.name}
     	showLittleSticksPlug={settings.showLittleSticksPlug}
 	>
-		<Logo slot="logo" />
+		<Logo slot="logo" iconColor="#FFF"/>
 	</Footer>
 </Layout>

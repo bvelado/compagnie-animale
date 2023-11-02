@@ -1,7 +1,15 @@
 ---
 import { Icon } from 'astro-icon'
+import HeaderNavItem from './HeaderNavItem.astro';
+import { HeaderNavItemData } from '../config/links';
+
+interface Props {
+  navData: HeaderNavItemData[],
+  rightMenu?: boolean
+}
 
 const { navData, rightMenu } = Astro.props;
+let isMobileMenuOpen = false;
 ---
 
 <script type="module">
@@ -18,7 +26,7 @@ const { navData, rightMenu } = Astro.props;
     menuButtonIconHam.toggleAttribute('hidden');
     menuButtonIconClose.toggleAttribute('hidden');
     
-    if (navHeader.hasAttribute('mobile-menu-open', true)) {
+    if (navHeader.hasAttribute('mobile-menu-open')) {
       menuButton.title = "Open Main Menu"
       // unlock scroll position
       bodyElement.style.removeProperty('overflow');
@@ -59,9 +67,7 @@ const { navData, rightMenu } = Astro.props;
     <slot name="nav">
       {navData && <nav>
         <ul>
-          {navData.map(navItem => (
-            (<li><a href={navItem.url} >{navItem.title}</a></li>)
-          ))}
+          {navData.map(navItem => <HeaderNavItem {navItem} isRootItem={true}/>)}
         </ul>
       </nav>}
     </slot>
@@ -157,9 +163,5 @@ const { navData, rightMenu } = Astro.props;
       align-items: center;
       flex-direction: column;
     }
-     header[mobile-menu-open] nav ul li {
-       font-size: var(--font-size-lg);
-       margin-bottom: 1rem;
-     }
   }
 </style>

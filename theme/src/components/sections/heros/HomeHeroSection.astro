@@ -51,6 +51,8 @@ import { default as Button } from '../../Button.astro';
 	}
 	.hero-btns__container {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		gap: 1rem;
 	}
 	.hero-section__image {
@@ -68,8 +70,7 @@ import { default as Button } from '../../Button.astro';
 			padding: var(--container-padding);
 		}
 		.hero-btns__container {
-			flex-direction: column;
-			align-items: center;
+			
 		}
 	}
 </style>

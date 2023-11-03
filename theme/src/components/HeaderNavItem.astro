@@ -11,7 +11,7 @@ const navItemClasses = `nav-item__item ${isRootItem ? 'nav-item__root' : ''}`;
 {navItem.children && navItem.children.length > 0 ? (
 <>
     <li class={`${navItemClasses} nav-item__subnav`}>
-        <a href="#">{navItem.title}</a>
+        <a href={navItem.url}>{navItem.title}</a>
     </li>
     {navItem.children.map(child => (
         <>

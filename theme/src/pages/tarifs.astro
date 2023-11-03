@@ -4,7 +4,6 @@ import { Container, TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import PricingCard from '../../../components/cards/PricingCard.astro';
 
-import { slugs } from '../utils/consts';
 import { links } from '../config/links';
 
 const seo = {
@@ -14,30 +13,68 @@ const seo = {
 ---
 
 <Layout {seo}>
-	<Container>
-		<TextSection  narrow>
-			<h2>Tarifs</h2>
-			<p>
-				Pour découvrir les prestations en détails, rendez-vous ici ou contactez-moi directement.
-                Moyens de paiement acceptés : Carte bancaire, chèques, espèces. 
-                0,50€/km à partir de 20km. 
-                Une facture vous sera remise lors de votre règlement. 
-                AJOUTER CARTE MAPS RAYON D'INTERVENTION 
-			</p>
-		</TextSection>
+	<TextSection narrow>
+		<h2>Tarifs</h2>
+		<p>
+			Vous trouverez plus de détails dans les pages dédiées de chaque <a href="/services">service</a>. 
+			Vous pouvez aussi me <a href="/contact">contacter</a> directement si vous avez des questions.
+		</p>
+		<p><b>Moyens de paiement acceptés:</b> Virement bancaire, chèques, espèces.</p>
+		<p><b>Frais de déplacement:</b> 0,50€/km à partir de 20km.
+		</p>
+		<p><i>Une facture vous sera remise lors de votre règlement.</i></p>
+	</TextSection>
+	<Container narrow>
         <section class="feature-card__section">
 			<h2>Chien</h2>
 			<p>
 				Prestations proposées pour les chiens.
 			</p>
 			<div class="feature-card__grid">
-				<PricingCard href={slugs.services.chien.bilanComportemental} title="Bilan comportemental" description="" price="80,00">
+				<PricingCard href={links.dogBehavior.url} title={links.dogBehavior.title} price="80,00">
+					Entretien durant lequel nous échangeons autour du comportement de votre chien
+					qui vous dérange et à la suite duquel je vous propose des solutions pour y pallier.
 				</PricingCard>
-				<PricingCard href={slugs.services.chien.educationCanine} title="Education canine" description="" price="50,00">
+				<PricingCard href={links.dogEducation.url} title={links.dogEducation.title} price="50,00">
+					Séance individuelle durant laquelle je vous accompagne et vous guide dans les situations que
+					vous rencontrez au quotidien (au domicile ou en extérieur) afin que vous puissiez vivre avec
+					votre chien en toute tranquillité.
 				</PricingCard>
-				<PricingCard href={slugs.services.chien.promenadeIndividuelle} title="Promenade individuelle" description="" price="15,00"></PricingCard>
-				<PricingCard href={slugs.services.chien.accompagnementAvantAdoption} title="Accompagnement avant adoption" description="" price="60,00"></PricingCard>
-				<PricingCard href={slugs.services.chien.preparationChangementsDeVie} title="Préparation aux changements de vie" description="" price="50,00">
+				<PricingCard href={links.dogWalk.url} title={links.dogWalk.title} price="15,00">
+					Si vous ne pouvez pas promener votre chien, je le fais pour vous ! La promenade dure entre
+					45min et 1h et se fait dans des lieux variés, en fonction de vos souhaits et des préférences
+					de votre chien.</PricingCard>
+				<PricingCard href={links.dogAdoption.url} title={links.dogAdoption.title} price="60,00">
+					Durant cet entretien, nous échangeons autour de votre projet d'adoption et je vous donne
+					les recommandations essentielles pour démarrer du bon pied avec votre compagnon!
+				</PricingCard>
+				<PricingCard href={links.dogLife.url} title={links.dogLife.title} price="50,00">
+					Votre quotidien s'apprête à être chamboulé (naissance, déménagement, reprise du travail)?
+					Durant un entretien, je vous donne des conseils pour limiter le stress chez votre compagnon
+					et ainsi éviter l'apparition de comportements gênants.
+				</PricingCard>
+			</div>
+		</section>
+	</Container>
+	<Container narrow>
+		<section class="feature-card__section">
+			<h2>Chat</h2>
+			<p>
+				Prestations proposées pour les chats.
+			</p>
+			<div class="feature-card__grid">
+				<PricingCard href={links.catBehavior.url} title={links.catBehavior.title} price="80,00">
+					Entretien durant lequel nous échangeons autour du comportement de votre chat
+					qui vous dérange et à la suite duquel je vous propose des solutions pour y pallier.
+				</PricingCard>
+				<PricingCard href={links.catAdoption.url} title={links.catAdoption.title} price="50,00">
+					Durant cet entretien, nous échangeons autour de votre projet d'adoption et je vous donne
+					les recommandations essentielles pour démarrer du bon pied avec votre compagnon!
+				</PricingCard>
+				<PricingCard href={links.catLife.url} title={links.catLife.title} price="15,00">
+					Votre quotidien s'apprête à être chamboulé (naissance, déménagement, reprise du travail)?
+					Durant un entretien, je vous donne des conseils pour limiter le stress chez votre compagnon
+					et ainsi éviter l'apparition de comportements gênants.
 				</PricingCard>
 			</div>
 		</section>

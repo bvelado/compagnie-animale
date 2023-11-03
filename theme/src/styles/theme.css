@@ -172,8 +172,8 @@
 	--theme-transition: 0.2s ease-in-out;
 
 	/* Theme Layout */
-	--section-margin: 3rem;
-	--theme-grid-gap: 1rem;
+	--section-margin: 2.4rem;
+	--theme-grid-gap: 1.6rem;
 	--container-max-width: 1440px;
 	--container-max-width-narrow: 960px;
 	--container-padding: 0 1rem;

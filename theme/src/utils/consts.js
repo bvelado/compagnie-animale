@@ -18,9 +18,9 @@ export const slugs = {
 				'services/chat/accompagnement-avant-adoption',
 			index: 'services/chat',
 		},
-        index: 'services'
+		index: 'services',
 	},
-    aPropos: 'a-propos',
-    tarifs: 'tarifs',
-    home: '/'
+	aPropos: 'a-propos',
+	tarifs: 'tarifs',
+	home: '/',
 };

@@ -2,11 +2,9 @@
 import Layout from '../../../layouts/Page.astro';
 import {
 	Container,
-	StickyTextImageSection,
 	TextSection,
 } from '../../../../../components';
 import Image from '../../../components/Image.astro';
-import { links } from '../../../config/links';
 
 const seo = {
 	title: `Education canine | Compagnie Animale`,
@@ -17,7 +15,7 @@ const seo = {
 };
 ---
 
-<Layout {seo} link={links.dogEducation}>
+<Layout {seo}>
 	<Container narrow>
 		<TextSection>
 			<h2>Éducation canine</h2>

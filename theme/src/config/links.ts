@@ -63,7 +63,8 @@ export interface HeaderNavItemData {
 
 export const navItems: HeaderNavItemData[] = [
 	{
-		...links.services, children: [
+		...links.services,
+		children: [
 			{
 				title: 'Chien',
 				items: [
@@ -71,18 +72,14 @@ export const navItems: HeaderNavItemData[] = [
 					links.dogBehavior,
 					links.dogWalk,
 					links.dogAdoption,
-					links.dogLife
-				]
+					links.dogLife,
+				],
 			},
 			{
 				title: 'Chat',
-				items: [
-					links.catBehavior,
-					links.catAdoption,
-					links.catLife,
-				]
-			}
-		]
+				items: [links.catBehavior, links.catAdoption, links.catLife],
+			},
+		],
 	},
 	links.tarifs,
 	links.about,

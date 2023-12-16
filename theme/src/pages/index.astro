@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
-import { Container, TextSection, ContainerColors } from '../../../components';
+import { Container, TextSection } from '../../../components';
 import Image from '../components/Image.astro';
+import { links } from '../config/links';
 
 const seo = {
 	title: 'Accueil',
@@ -13,37 +14,45 @@ const seo = {
 
 <Layout {seo}>
 	<HomeHeroSection />
+	<TextSection>
+		<p>
+			Educatrice comportementaliste canin et félin, je vous accompagne vers un
+			quotidien serein avec votre compagnon, pour répondre à vos attentes, vos
+			besoins et ceux de votre animal.
+		</p>
+		<p>
+			Parce qu'il est prouvé scientifiquement qu'un climat serein et de
+			confiance favorise l'apprentissage, mes méthodes de travail sont
+			positives et bienveillantes, respectueuses de l'animal et de son
+			bien-être.
+		</p>
+	</TextSection>
 	<Container narrow>
-		<TextSection>
-			<p>
-				Educatrice comportementaliste canin et félin, je vous accompagne vers un
-				quotidien serein avec votre compagnon, pour répondre à vos attentes, vos
-				besoins et ceux de votre animal.
-			</p>
-			<p>
-				Parce qu'il est prouvé scientifiquement qu'un climat serein et de
-				confiance favorise l'apprentissage, mes méthodes de travail sont
-				positives et bienveillantes, respectueuses de l’animal et de son
-				bien-être.
-			</p>
-		</TextSection>
 		<Image
 			src="/assets/images/home_01.jpeg"
 			alt="En harmonie avec votre chien ou votre chat"
 		/>
-		<TextSection>
-			<p>
-				Avec moi, attendez-vous à délaisser certaines habitudes et préjugés,
-				mais préparez-vous surtout à (re)découvrir votre animal et à prendre du
-				plaisir avec lui !
-			</p>
-		</TextSection>
 	</Container>
-	<Container>
-
-	</Container>
+	<TextSection>
+		<p>
+			Avec moi, attendez-vous à délaisser certaines habitudes et préjugés,
+			mais préparez-vous surtout à (re)découvrir votre animal et à prendre du
+			plaisir avec lui !
+		</p>
+	</TextSection>
+	<TextSection>
+		<p>
+			Située dans le nord des Landes, j'interviens à Mimizan et ses alentours pour différents services : bilans comportementaux, éducation canine, promenades canines, conseils avant adoption ... 
+		</p>
+		<p>
+			Je vous invite à <a href={links.contact.url}>me contacter</a> pour que nous déterminions ensemble la prestation qui vous conviendra. 
+		</p>
+	</TextSection>
 </Layout>
 
 <style>
-	
+	#contact-link-button-container,
+	#contact-link-button-container a {
+		display: inline-block;
+	}
 </style>

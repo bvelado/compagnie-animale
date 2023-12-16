@@ -9,7 +9,6 @@ interface Props {
 }
 
 const { navData, rightMenu } = Astro.props;
-let isMobileMenuOpen = false;
 ---
 
 <script type="module">
@@ -27,7 +26,7 @@ let isMobileMenuOpen = false;
     menuButtonIconClose.toggleAttribute('hidden');
     
     if (navHeader.hasAttribute('mobile-menu-open')) {
-      menuButton.title = "Open Main Menu"
+      menuButton.title = "Ouvrir le menu"
       // unlock scroll position
       bodyElement.style.removeProperty('overflow');
       bodyElement.style.removeProperty('position');
@@ -35,7 +34,7 @@ let isMobileMenuOpen = false;
       bodyElement.style.removeProperty('width');
       window.scrollTo(0, scrollPosition);
     } else {
-      menuButton.title = "Close Main Menu"
+      menuButton.title = "Fermer le menu"
       // lock scroll position
       scrollPosition = window.pageYOffset;
       bodyElement.style.overflow = 'hidden';
@@ -50,7 +49,7 @@ let isMobileMenuOpen = false;
 
 <header id="mainHeader" class={`${rightMenu ? "header--right" : ``.trim()}`}>
   <div class="header-logo-menu__container">
-  <button id="menuButton" title="Open Main Menu">
+  <button id="menuButton" title="Ouvrir le menu">
     <span id="menuButtonIconHam" class="header-logo-menu-button__icon">
       <Icon name="ic:baseline-menu" width="24px" height="24px" />
     </span>

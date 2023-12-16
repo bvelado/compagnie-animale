@@ -1,5 +1,5 @@
 ---
-import { Footer } from '@littlesticks/odyssey-theme-components';
+import Footer from '../components/core/Footer.astro';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
@@ -31,8 +31,17 @@ const { seo } = Astro.props as Props;
 		footerLists={footerLists}
     	footerSocials={footerSocials}
 		copyrightName={settings.name}
-    	showLittleSticksPlug={settings.showLittleSticksPlug}
 	>
-		<Logo slot="logo" iconColor="#FFF"/>
+		<a class="footer-logo__link" href="/" slot="logo">
+			<Logo iconColor="#FFF"/>
+		</a>
 	</Footer>
 </Layout>
+
+<style>
+	.footer-logo__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+</style>

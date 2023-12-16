@@ -1,0 +1,51 @@
+---
+import Container from "../core/Container.astro";
+
+export enum TextSectionColors {
+  None,
+  Primary,
+  Surface1,
+  Surface2,
+}
+
+const { narrow, colors = TextSectionColors.None } = Astro.props;
+
+function mapToColorClass(input: TextSectionColors) {
+  switch (input) {
+    case TextSectionColors.Primary:
+      return "text__section-primary";
+    case TextSectionColors.Surface1:
+      return "text__section-surface1";
+    case TextSectionColors.Surface2:
+      return "text__section-surface2";
+    default:
+      return "";
+  }
+}
+
+let colorClass: string = mapToColorClass(colors);
+---
+
+<Container narrow={narrow}>
+  <section class={colorClass + " text__section"}>
+    <slot />
+  </section>
+</Container>
+
+<style>
+  .text__section {
+    margin: var(--section-margin) auto;
+  }
+  .text__section-primary {
+    background-color: var(--theme-primary);
+    color: var(--theme-on-primary);
+  }
+  .text__section-surface1 {
+    background-color: var(--theme-surface-1);
+    color: var(--theme-on-surface-1);
+  }
+  .text__section-surface2 {
+    background-color: var(--theme-surface-2);
+    color: var(--theme-on-surface-2);
+  }
+</style>
